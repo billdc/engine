@@ -147,6 +147,7 @@ func (n *Node) Clone() INode {
 	clone.loaderID = n.loaderID
 	clone.visible = n.visible
 	clone.userData = n.userData
+	clone.inode = clone
 
 	// Update matrix world and rotation if necessary
 	n.UpdateMatrixWorld()
